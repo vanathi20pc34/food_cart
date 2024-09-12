@@ -1,0 +1,159 @@
+header {
+  height: 150px;
+  background-image: url("./static/food_court.jpg");
+}
+
+.overlay{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
+nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+li a {
+  background-color: aquamarine;
+  text-decoration: none;
+}
+
+.cart {
+  background-color: aquamarine;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container,.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.food {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 425px;
+  position: relative;
+}
+
+.add-cart {
+  z-index: 200;
+  text-decoration: none;
+  margin-top: 20px;
+  bottom: 50px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  cursor: pointer;
+  text-align: center;
+}
+
+.food:hover .cart1,
+.food:hover .cart2,
+.food:hover .cart3,
+.food:hover .cart4,
+.food:hover .cart5,
+.food:hover .cart6,
+.food:hover .cart7,
+.food:hover .cart8,
+.food:hover .cart9{
+  text-decoration: none;
+}
+
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 5px solid lightgray;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img{
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
